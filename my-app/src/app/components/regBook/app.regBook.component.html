@@ -1,0 +1,142 @@
+<div class="container">
+  <div class="py-5 text-center">
+    <img
+      class="d-block mx-auto mb-4"
+      src="../../../assets/img/Logo.png"
+      alt=""
+      width="72"
+      height="72"
+    />
+    <h2>Registro de libros</h2>
+    <p class="lead">
+      Da de alta un libro llenando los siguientes datos.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Datos del Libro</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Titulo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder=""
+              value=""
+              required=""
+            />
+            <div class="invalid-feedback">
+              Ingresa un titulo Valido
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">ISBN</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder=""
+              value=""
+              required=""
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="username">Autor</label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Autor"
+              required=""
+            />
+            <div class="invalid-feedback" style="width: 100%;">
+              Your username is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email"
+            >Info <span class="text-muted">(Optional)</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="text"
+            placeholder="Informacion del libro"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Idioma</label>
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            placeholder="Español"
+            required=""
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="address2"
+            >Paginas<span class="text-muted">(Opcional)</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="address2"
+            placeholder="100"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="address2"
+            >Imagen<span class="text-muted">(Opcional)</span></label
+          >
+          <input
+            type="file"
+            accept="image/*"
+            class="form-control"
+            id="address2"
+            placeholder="100"
+          />
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Pais</label>
+            <select
+              class="custom-select d-block w-100"
+              id="country"
+              required=""
+            >
+              <option value="">Elige...</option>
+              <option>Mexico</option>
+              <option>España</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Año de publicacion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="zip"
+              placeholder=""
+              required=""
+            />
+          </div>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">
+          Registrar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
